@@ -1,26 +1,26 @@
-let age = 16;
+let userAge = 16;
 
-let bigint = 1838449n;
+let userCryptoWallet = 1838449n;
 
-let eat = "tomato";
+let userEat = "tomato";
 
-let goToSchool = false;
+let userGoToSchool = false;
 
-let name = null;
+let userName = null;
 
-let walk;
+let userWalk;
 
 let user = {};
 
 let id = Symbol("id");
 
 
-console.log(Number(age), String(age), Boolean(age));
-console.log(String(1838449n), Number(1838449n), Boolean(1838449n));
-console.log(String(eat), Number(eat), Boolean(eat));
-console.log(Boolean(goToSchool), String(goToSchool), Number(goToSchool));
-console.log(Number(name), String(name), Boolean(name));
-console.log(Number(walk), String(walk), Boolean(walk));
+console.log(Number(userAge), String(userAge), Boolean(userAge));
+console.log(String(userCryptoWallet), Number(userCryptoWallet), Boolean(userCryptoWallet));
+console.log(String(userEat), Number(userEat), Boolean(userEat));
+console.log(Boolean(userGoToSchool), String(userGoToSchool), Number(userGoToSchool));
+console.log(Number(userName), String(userName), Boolean(userName));
+console.log(Number(userWalk), String(userWalk), Boolean(userWalk));
 console.log(Number(user), String(user), Boolean(user));
-// console.log(Number(id), id.toString(), Boolean(id));
+// console.log(Number(id), id.toString(id), Boolean(id));
 
