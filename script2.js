@@ -1,34 +1,24 @@
 // 1 задание
 
+// let number = prompt("Введите число");
 
-    let number = prompt("Введите число");
-    console.log(number++)
-
-
- 
-
-
-
-
-    // let bankBalance = 1500;
-    // let amount = 2099;
-    // if(amount < bankBalance){
-    //     console.log("Я покупаю телефон");
-    // }else {
-    //     console.log("Нет, спасибо");
-    // }
-
-
-
-// let userNumber = prompt("Введите число");
-// while(1) {
-
+// for (let i = number; i > 0; i--) {
+//     if (i % 4) {
+//         console.log( i );
+//     }
 // }
 
-// let i = 1
-// let userNumber = prompt("Введите число");
-// for (userNumber, i=1; i<80,)
+// 2 задание
 
+let result = num;
+let number = prompt("Введите число");
 
-
-
+for (let i = number; i > 0; factorial)
+if (result < 1){
+let number = prompt("Введите число");
+} else {
+    while(number > 1) {
+        number--;
+        result *= num;
+    }
+}
