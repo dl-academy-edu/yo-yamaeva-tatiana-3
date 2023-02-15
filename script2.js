@@ -9,19 +9,6 @@
 // }
 
 // 2 задание
-
-// let number = prompt("Введите число");
-// let i = number;
-// let result = factorial;
-
-// if (result < 1) {
-//     let number = prompt("Введите число");
-// } else {
-//     while(number > 1) {
-//         result = result * (i-1);
-//         i--;
-//     }
-// }
    
 let number = prompt("Введите число");
 let i = number;
@@ -38,19 +25,4 @@ for (let i = number; i > 0; factorial) {
     }
 }
 
-
-
-
-// let result = num;
-// let number = prompt("Введите число");
-
-// for (let i = number; i > 0; factorial)
-// if (result < 1){
-// let number = prompt("Введите число");
-// } else {
-//     while(number > 1) {
-//         number--;
-//         result *= num;
-//     }
-// }
 
