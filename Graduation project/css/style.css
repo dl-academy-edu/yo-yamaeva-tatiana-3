@@ -1,0 +1,126 @@
+/* Стилизация мэйна */
+
+.information {
+    display: flex;
+}
+
+.caption {
+    font-size: 47px;
+    line-height: 57px;
+    width: 280px;
+    margin-top: 40px;
+}
+
+.desc {
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    width: 226px;
+    margin-top: 103px;
+    margin-left: 40px;
+}
+
+/* Стилизация слайдера */
+
+.slider {
+    margin: 50px auto;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.slider_wrapper {
+    overflow: hidden;
+}
+
+.slider_inner-wrapper {
+    display: flex;
+    height: 100%;
+    transition: transform;
+}
+
+.slider_slide {
+    display: flex;
+    flex-shrink: 0;
+    height: 465px;
+    align-items: center;
+    justify-content: center;
+    font-style: 24px;
+    color: #fff;
+}
+
+.slider_slide:nth-child(4n + 1) {
+    background-color: #e08dac;
+}
+
+.slider_slide:nth-child(4n + 2) {
+    background-color: #45cb85;
+}
+
+.slider_slide:nth-child(4n + 3) {
+    background-color: #f79824;
+}
+
+.slider_slide:nth-child(4n + 4) {
+    background-color: #dc143c;
+}
+
+.slider__bottom-panel {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider__dot {
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  /* transition: 0.4s; */
+}
+
+.slider__dot:not(:last-child) {
+  margin-right: 5px;
+}
+
+.slider__button:hover {
+  opacity: 0.5;
+}
+
+.slider__button:active {
+  opacity: 0.2;
+} 
+
+.slider__dot_active {
+   background-color: #000; 
+} 
+
+.slider__dot:not(.slider__dot_active):hover, .slider__dot:not(.slider__dot_active):focus {
+  background-color: #828282; 
+}  
+
+.slider__button {
+  width: 42px;
+  height: 42px;
+  border: none;
+  /* border: 2.5px solid #070707; */
+  /* border-radius: 21px; */
+  /* background-color: transparent; */
+  font-size: 20px;
+  /* outline: none; */
+  /* transition: all 0.5s; */
+}
+
+.slider__button:not(:disabled):hover, .slider__button:not(:disabled):focus {
+  cursor: pointer; 
+  /* background-color: #000;
+  color: #fff;  */
+} 
+
+.slider__button:disabled {
+  /* opacity: 0.4;
+  pointer-events: none;
+  user-select: none; */
+} 

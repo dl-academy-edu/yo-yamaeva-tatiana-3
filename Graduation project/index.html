@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Start Page</title>
+</head>
+<body>
+    <header class="container header">
+        <a class="header-home" href="index.html">Home</a>
+        <ul class="header__list">
+            <li class="header__list-item"><a class="header__title" href="#">My blog</a></li>
+            <li class="header__list-item"><a class="header__title" href="#">Sign in</a></li>
+            <li class="header__list-item"><a class="header__title" href="#">Register</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="information container">
+        <h1 class="caption">Tatiana Anatolievna</h1>
+        <p class="desc">Future front-end developer 16 years old, Tolyatti</p>
+        </section>
+        <div class="container">
+            <div class="slider">
+                <div class="slider_wrapper">
+                    <div class="slider_inner-wrapper">
+                        <div class="slider_slide">this is 1 slide</div>
+                        <div class="slider_slide">this is 2 slide</div>
+                        <div class="slider_slide">this is 3 slide</div>
+                        <div class="slider_slide">this is 4 slide</div>
+                    </div>
+                </div>
+                <div class="slider__bottom-panel">
+                    <button class="slider__button slider__button_back"><img class="slider__button_back-js" src="./icon/arrow__left.svg" alt="arrow-left"></button>
+                    <div class="sliider__pagination slider__pagination_js">
+                        <button class="slider__dot slider__dot_active"></button>
+                        <button class="slider__dot"></button>
+                        <button class="slider__dot"></button>
+                        <button class="slider__dot"></button>
+                    </div>
+                    <button class="slider__button slider__button_next"><img class="slider__button_next-js" src="./icon/arrow_right.svg" alt="arrow-right"></button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
+
+<!-- slider__button_back-js
+slider__button_next-js -->
