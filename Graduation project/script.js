@@ -1,6 +1,6 @@
 (function() {
     const slider = document.querySelector('.slider');
-    const wrapper = slidder.querySelector('.slider_wrapper');
+    const wrapper = slider.querySelector('.slider_wrapper');
     const innerWrapper = wrapper.querySelector('.slider_inner-wrapper');
     const slides = [...document.querySelectorAll('.slider_slide')];
     const slidesCount = slides.length;
@@ -66,26 +66,26 @@
         });
     }
 
-    // function createDots() {
-    //     for (let i = 0; i < slidesCount; i++) {
-    //         const dot = createDot(i);
-    //         dots.push(dot);
-    //         pagination.insertAdjacentElement('beforeend', dot);
-    //     }
-    // }
+    function createDots() {
+        for (let i = 0; i < slidesCount; i++) {
+            const dot = createDot(i);
+            dots.push(dot);
+            pagination.insertAdjacentElement('beforeend', dot);
+        }
+    }
 
-    // function createDot() {
-    //     const dot = document.createElement('button');
-    //     dot.classList.add('slider__dot');
+    function createDot(index) {
+        const dot = document.createElement('button');
+        dot.classList.add('slider__dot');
 
-    //     if(index === activeSlideIndex) {
-    //         dot.classList.add('slider__dot_active');
-    //     }
+        if(index === activeSlideIndex) {
+            dot.classList.add('slider__dot_active');
+        }
 
-    //     dot.addEventListener('click', () => {
-    //         setActiveSlide(index);
-    //     })
+        dot.addEventListener('click', () => {
+            setActiveSlide(index);
+        })
 
-    //     return dot;
-    // }
+        return dot;
+    }
 })();
