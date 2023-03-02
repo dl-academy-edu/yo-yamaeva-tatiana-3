@@ -27,6 +27,7 @@
 .slider {
     margin: 50px auto;
     font-family: 'Gilroy', sans-serif;
+    user-select: none;
 }
 
 .slider_wrapper {
@@ -73,9 +74,11 @@
 }
 
 .slider__dot {
+  width: 10px;
+  height: 10px;
   border: none;
   padding: 0;
-  border-radius: 50%;  
+  border-radius: 50%;   
   outline: none;
   cursor: pointer;
   transition: 0.4s;
@@ -85,20 +88,12 @@
   margin-right: 7px;
 } 
 
-.slider__button:hover {
-  opacity: 0.5;
-}
-
-.slider__button:active {
-  opacity: 0.2;
-} 
-
  .slider__dot_active {
-  /* background-color: #000;  */
+  background-color: #000; 
 }  
 
 .slider__dot:not(.slider__dot_active):hover, .slider__dot:not(.slider__dot_active):focus {
-  /* background-color: #828282;  */
+  background-color: #828282; 
 } 
 
 .slider__button {
@@ -107,6 +102,14 @@
   border: none;
   background: none;
 }
+
+.slider__button:hover {
+  opacity: 0.5;
+}
+
+.slider__button:active {
+  opacity: 0.2;
+} 
 
 .slider__button:not(:disabled):hover, .slider__button:not(:disabled):focus {
   cursor: pointer; 
@@ -117,3 +120,10 @@
   pointer-events: none;
   user-select: none;
 } 
+
+/* Анимации */
+
+/* .title {
+  text-align: center;
+} */
+

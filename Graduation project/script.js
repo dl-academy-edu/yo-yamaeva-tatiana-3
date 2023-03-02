@@ -10,13 +10,44 @@
     const ANIMATION_TIME = 500;
 
     let activeSlideIndex = 0;
-    let sileWidth = wrapper.offsetWidth;
+    let siledWidth = wrapper.offsetWidth;
     let timer = null;
     let dots = [];
+    let checkerMouseDown = false;
+    let clientX = 0;
+    let percentDiff = 0.2;
+    let lastClientX = 0;
+    let isTouched = false;
 
     initWidth();
     createDots();
     setActiveSlide(0, false);
+
+    wrapper.addEventListener('touchstart', (e) => {
+        isTouched = true;
+        const touch = e.touches[0];
+        clientX = touch.clientX;
+        lastClientX = touch.clientX;
+    })
+
+    wrapper.addEventListener('touchmove',(e) => {
+        isTouched = true;
+        const touch = e.touches[0];
+        lactClientX = touch.clientX;
+        setActiveSlide(activeSlideIndex + 1);
+    })
+
+    wrapper.addEventListener('touchend', (e) => {
+        if(!isTouched) return;
+        isTouched = false;
+        if ( clientX - lastClientX > percentDiff * siledWidth) {
+            setActiveSlide(activeSlideIndex + 1);
+        } else if (lastClientX - clientX > percentDiff * siledWidth) {
+            setActiveSlide(activeSlideIndex - 1);
+        } else {
+            setActiveSlide(activeSlideIndex);
+        }
+    })
 
     buttonNext.addEventListener('click', () => {
         setActiveSlide(activeSlideIndex + 1);
@@ -31,13 +62,21 @@
         setActiveSlide(activeSlideIndex, false);
     })
 
-    function setActiveSlide(index, withAnimation = true) {
+    wrapper.addEventListener('mousedown', (e) => {
+        checkerMouseDown = true;
+        clientX = e.clientX;
+    });
+
+    wrapper.addEventListener('mouseup', endMouseEvent);
+    wrapper.addEventListener('mouseout', endMouseEvent);
+
+    function setActiveSlide(index, withAnimation = true, diff = 0) {
         if (index < 0 || index >= slidesCount) return;
 
         buttonBack.removeAttribute('disabled');
         buttonNext.removeAttribute('disabled');
 
-        innerWrapper.style.transform = `translateX(${index * sileWidth * (-1)}px)`;
+        innerWrapper.style.transform = `translateX(${index * siledWidth * (-1) + diff}px)`;
 
         if(withAnimation) {
             innerWrapper.style.transition = `transform ${ANIMATION_TIME}ms`;
@@ -54,15 +93,16 @@
             buttonNext.setAttribute('disabled', '');
         }
 
+        dots[activeSlideIndex].classList.remove('slider__dot_active');
+        dots[index].classList.add('slider__dot_active');
         activeSlideIndex = index;
-        dots[activeSlideIndex].classList.remove('slider')
     }
 
     function initWidth() {
-         sileWidth = wrapper.offsetWidth;
+         siledWidth = wrapper.offsetWidth;
 
          slides.forEach(slide => {
-            slide.style.width = `${sileWidth}px`;
+            slide.style.width = `${siledWidth}px`;
         });
     }
 
@@ -87,5 +127,18 @@
         })
 
         return dot;
+    }
+
+    function endMouseEvent(e) {
+     if(!checkerMouseDown) {
+        return;
+     }
+
+     checkerMouseDown = false;
+     if(clientX - e.clientX > percentDiff * siledWidth) {
+       setActiveSlide(activeSlideIndex + 1);
+     } else if ( e.clientX - clientX > percentDiff * siledWidth ) {
+        setActiveSlide(activeSlideIndex - 1);
+     } 
     }
 })();
