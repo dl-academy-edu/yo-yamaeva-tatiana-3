@@ -31,10 +31,10 @@
     })
 
     wrapper.addEventListener('touchmove',(e) => {
-        isTouched = true;
+        if(!isTouched) return;
         const touch = e.touches[0];
         lactClientX = touch.clientX;
-        setActiveSlide(activeSlideIndex + 1);
+        setActiveSlide(activeSlideIndex, false, clientX - lastClientX);
     })
 
     wrapper.addEventListener('touchend', (e) => {
