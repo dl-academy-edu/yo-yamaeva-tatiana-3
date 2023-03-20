@@ -59,6 +59,17 @@ body {
     font-display: swap;
 }
 
+.btn {
+    font-weight: 700;
+    line-height: 22px;
+    max-width: max-content;
+    padding: 10px 19px;
+    border-radius: 30px;
+    border: 2.5px solid #070707;
+    color: #070707;
+    background: #FFFFFF;
+}
+
 a {
     cursor: pointer;
     text-decoration: none;
@@ -113,3 +124,102 @@ li {
     color: #070707;
 }
 
+/* Стилизация футера */
+
+.title__contacts {
+    font-size: 34px;
+    line-height: 41px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.subtitle__contacts {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    width: 269px;
+    margin-top: 20px;
+    margin-left: 365px;
+    text-align: center;
+}
+
+.button-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-contacts {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    border-radius: 30px;
+    margin-top: 30px;
+    padding: 10px 29px;
+    color: #FFFFFF;
+    background: #070707;
+}
+
+.btn-contacts:hover {
+    border: 2.5px solid #070707;
+    color: #070707;
+    background: #FFFFFF;
+}
+
+.socials-footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.socials-footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-footer {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    border-radius: 30px;
+    border: 2.5px solid #070707;
+    padding: 10px 19px;
+    gap: 10px;
+    color: #070707;
+    background: #FFFFFF;
+}
+
+.btn-footer:hover {
+    border: 2.5px solid #070707;
+    color: #FFFFFF;
+    background: #070707;
+}
+
+.btn-footer-link:hover {
+    color: #FFFFFF;
+}
+
+.footer__text {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.footer__information {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 5px;
+    color: #828282;
+}
+
+.decoration__link {
+    color: #828282;
+    text-decoration: none;
+    border-bottom: 2px dashed #828282;
+}
+
+.decoration__link:hover {
+    color: #070707;
+    border-bottom: 1px solid #070707;
+}

@@ -2,252 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Montserrat:wght@200;400;500;700&family=Open+Sans:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/normolize.css">
-    <title>Main</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <title>My blog</title>
 </head>
 <body>
     <header class="container header">
-        <a href="./index.html">
-            <img class="header-logo" src="./icon/logo.svg" alt="logo" width="100" height="52">
-        </a>
+        <a class="header-home" href="../index.html">Home</a>
         <ul class="header__list">
-            <li class="header__list-item header-blog"><a href="./pages/blog.html">BLOG</a></li>
-            <li class="header__list-item header-catalog"><a href="./pages/catalog.html">CATALOG</a></li>
-            <li class="header__list-item header-about"><a href="#">ABOUT US</a></li>
-        </ul>
-        <ul class="header__contact">
-            <li><img src="./icon/search.svg" class="header__contact-found" alt="loupe" width="17" height="17"></li>
-            <li class="contact"><a href="./pages/contact.html">CONTACT US</a></li>
+            <li class="header__list-item"><a class="header__title" href="#">My blog</a></li>
+            <li class="header__list-item"><a class="header__title" href="#">Sign in</a></li>
+            <li class="header__list-item"><a class="header__title" href="#">Register</a></li>
         </ul>
     </header>
     <main>
         <div class="container">
-            <section class="banner">
-                <ul class="handle">
-                    <span class="handle__swich">01</span>
-                    <li class="swich active"></li>
-                    <li class="swich"></li>
-                    <li class="swich"></li>
-                    <li class="swich"></li>
-                </ul>
-                <div class="title">
-                    <h1 class="title__banner">THE OOH NOO COLLECTION </h1>
-                    <h2 class="title-two">Designed in Slovenia</h2>
-                    <button type="button" class="btn btn__js">EXPLORE NOW</button>
-                    <img src="./image/monster.png" alt="monster-title" class="monster">
-                </div>
-            </section>
-            <div class="container subtitle">
-                <p class="subtitle__text">Free (continental) USA shipping on all orders of $100 USD or more!</p>
-            </div>
-            <section class="container">
-                <h2 class="subject">CATEGORE PRODUCTS</h2>
-                <ul class="servises__list">
-                    <li class="image">
-                        <img src="./icon/apparel.svg" alt="APPAREL KIDS" width="280" height="270">
-                        <a class="link-title link-active" href="#">APPAREL KIDS</a>
-                    </li>
-                    <li class="image">
-                        <img src="./icon/holiday.svg" alt="HOLIDAY SHOP" width="280" height="270">
-                        <a class="link-title link-active" href="#">HOLIDAY SHOP</a>
-                    </li>
-                    <li class="image">
-                        <img src="./icon/toys.svg" alt="TOYS" width="280" height="270">
-                        <a class="link link-active" href="./pages/toys.html">TOYS</a>
-                    </li>
-                    <li class="image">
-                        <img src="./icon/accessories.svg" alt="ACCESSORIES" width="280" height="270">
-                        <a class="link__accessories link-active" href="#">ACCESSORIES</a>
-                    </li>
-                </ul>
-                <div class="control">
-                    <img class="control-arrow" src="./icon/arrowleft.svg" alt="strelka left" width="37" height="37"><img
-                        class="control-arrow" src="./icon/arrowright.svg" alt="strelka right" width="37" height="37">
-                    <p class="desc">Modern finds for the modern home. Curated goods by unique designers around the world
-                        from fashion to
-                        furniture for kids and adults.</p>
-                </div>
-            </section>
-            <div class="delivery__content">
-                <section>
-                    <div class="container">
-                        <div class="content">
-                            <h2 class="subject">DELIVERY</h2>
-                            <h2 class="title__content subject__content title__allocator">Delivery</h2>
-                            <h3 class="title__content subject__title-two">Guarantee</h3>
-                            <h4 class="title__content subject__title-three">Credit</h4>
-                            <p class="title__over">Some days i feel like i've been working on dlk my entire life and
-                                there
-                                are other days that i am
-                                completely shocked that four years have flown by. It's simply magical.</p>
-                            <p class="title__over-one">What started as an outlet to deal with the traumatic loss of my
-                                husband, dlk has now become a
-                                truly happy place for me and i have you and all of the beautiful designers that we work
-                                with
-                                to
-                                thank!</p>
-                            <button type="button" class="btn">LEARN MORE</button>
-                        </div>
-                    </div>
-                </section>
-                <img class="picture" src="./image/delivery.png" alt="clothing delivery" width="480" height="559">
-            </div>
-            <section class="socials">
-                <h2 class="socials-title">Socials</h2>
-                <li class="socials"><img src="./icon/mail.svg" width="193" height="60" alt="mail"></li>
-                <li class="socials"><img src="./icon/apple.svg" width="179" height="61" alt="apple"></li>
-                <li class="socials"><img src="./icon/eltex.svg" width="216" height="46" alt="eltex"></li>
-                <li class="socials"><img src="./icon/owox.svg" width="211" height="40" alt="owox"></li>
-            </section>
-            <div class="about__text">
-                <section class="design">
-                    <div class="content__about">
-                        <h2 class="subject headline__title">DESIGN LIFE KIDS</h2>
-                    </div>
-                    <p class="title__content title__about">About Us</p>
-                    <p class="title__desc">Some days i feel like i've been working on dlk my entire life and there are
-                        other days that i am
-                        completely shocked that four years have flown by. It's simply magical.</p>
-                    <button type="button" class="btn button__click">BUY NOW</button>
-                </section>
-                <section class="contacts">
-                    <h2 class="subject headline__title">CONTACTS</h2>
-                    <p class="contact__text">Some days i feel like i've been working on dlk my entire life and there are
-                        other days that i am
-                        completely shocked that four years have flown by. It's simply magical.</p>
-                </section>
-            </div>
-            <iframe class="map-widget" src="https://yandex.ru/map-widget/v1/-/CCUZICbQOC" width="560" height="400"
-                frameborder="1" allowfullscreen="true"></iframe>
+            <h1 class="caption">My blog</h1>
+        </div>
     </main>
-    <footer class="footer background">
-        <div class="container footer__wrap title__footer">
-            <section>
-                <h5 class="title__footer-list">Navigaton</h5>
-                <ul class="nav-item footer__title">
-                    <li class="footer__list">
-                        <a class="title__footer-list-item" href="#">About Us</a>
-                    </li>
-                    <li class="footer__list">
-                        <a class="title__footer-list-item" href="./pages/blog.html">Blog</a>
-                    </li>
-                    <li class="footer__list">
-                        <a class="title__footer-list-item" href="#">Design Servises</a>
-                    </li>
-                    <li class="footer__list">
-                        <a class="title__footer-list-item" href="#">Featured On</a>
-                    </li>
-                    <li class="footer__list">
-                        <a class="title__footer-list-item" href="#">2018 Holiday Catalog</a>
-                    </li>
-                    <li class="footer__list">
-                        <a class="title__footer-list-item" href="#">Shop By Designer</a>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h5 class="title__footer-list">Customer information</h5>
-                <ul class="customer-item footer__title">
-                    <li class="footer__list">
-                        <a class="title__footer-list-item" href="./pages/contact.html">Contact Us</a>
-                    </li>
-                    <li class="footer__list">
-                        <a class="title__footer-list-item" href="#">Sale Exclusions</a>
-                    </li>
-                    <li class="footer__list">
-                        <a class="title__footer-list-item" href="#">Shopping&Returns</a>
-                    </li>
-                    <li class="footer__list">
-                        <a class="title__footer-list-item" href="#">Terms&Conditions</a>
-                    </li>
-                    <li class="footer__list">
-                        <a class="title__footer-list-item" href="#">Privacy Policy</a>
-                    </li>
-                    <li class="footer__list">
-                        <a class="title__footer-list-item" href="#">Search</a>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h5 class="title__footer-list">Connect</h5>
-                <ul class="connect-item footer__title footer__title-connect">
-                    <div>
-                        <label for="input-email"></label>
-                        <input class="input__footer" type="text" id="input-email" placeholder="Email">
-                        <button class="btn-footer" type="join">Join</button>
-                    </div>
-                    <ul class="socials-footer">
-                        <li><a class="soc-footer" href="#"><img src="./icon/facebook.svg" width="30" height="30" alt="facebook"></a></li>
-                        <li><a class="soc-footer" href="https://investor.twitterinc.com/"><img src="./icon/twitter.svg" width="30" height="30" alt="twitter"></a></li>
-                        <li><a class="soc-footer" href="https://ru.pinterest.com/"><img src="./icon/pinterest.svg" width="30" height="30" alt="pinterest"></a></li>
-                        <li><a class="soc-footer" href="#"><img src="./icon/instagram.svg" width="30" height="30" alt="instagram"></a></li>
-                    </ul>
-                </ul>
-            </section>
-        </div>
-        <div class="container footer__inner-wrap">
-            <div class="rating__wrap">
-                <p><a class="footer__list-company" href="#">Company Rating</a></p>
-                <div class="rating__group">
-                    <input type="radio" id="star-5" name="rating" value="5">
-                    <label class="label-rating" for="star-5" title="Супер"></label>
-                    <input type="radio" id="star-4" name="rating" value="4">
-                    <label class="label-rating" for="star-4" title="Хорошо"></label>
-                    <input type="radio" id="star-3" name="rating" value="3">
-                    <label class="label-rating" for="star-3" title="Пойдёт"></label>
-                    <input type="radio" id="star-2" name="rating" value="2">
-                    <label class="label-rating" for="star-2" title="Не очень"></label>
-                    <input type="radio" id="star-1" name="rating" value="1">
-                    <label class="label-rating" for="star-1" title="Все плохо"></label>
-                </div>
+    <!-- <footer>
+        <div class="container">
+            <h2 class="title__contacts">Contacts</h2>
+            <p class="subtitle__contacts">Want to know more or just chat? You are welcome!</p>
+            <div class="button-wrapper">
+                <button type="button" class="btn-contacts">Send message</button>
             </div>
-            <p class="footer__list-item">Copyright 2018 DLK Design Life Kids</p>
-            <p class="footer__list-connect">Web Design - Direct Line Development</p>
+        <section>
+            <ul class="socials-footer">
+                <button type="button" class="btn-footer"><a class="btn-footer-link" href="#">Instagram</a></button>
+                <button type="button" class="btn-footer"><a class="btn-footer-link" href="https://vk.com/tanya_yamaeva">Vk</a></button>
+                <button type="button" class="btn-footer"><a class="btn-footer-link" href="http://t.me/tane4ka_2006">Telegram</a></button>
+            </ul>
+            <ul class="socials-footer-bottom">
+            <button type="button" class="btn-footer"><a class="btn-footer-link" href="#">Mail</a></button>
+            <button type="button" class="btn-footer"><a class="btn-footer-link" href="https://github.com/taaanyya">GitHub</a></button>
+            <button type="button" class="btn-footer"><a class="btn-footer-link" href="#">Phone</a></button>
+            </ul>
+        </section>
+        <div class="footer__text">
+            <p class="footer__information">Design by <a class="decoration__link" href="#">DL Academy</a></p>
+            <p class="footer__information">Program code from Tatiana</p>
         </div>
-    </footer>
-            <section class="popup">
-                <div class="popup__wrapper">
-                    <h2 class="hidden">Popup</h2>
-                    <form action="#" class="popup-form">
-                        <div class="label__wrapper">
-                            <label for="input-name">Name</label>
-                            <input class="input-popup" type="name" id="input-name">
-                        </div>
-                        <div class="fieldself-double">
-                            <div class="fieldself-phone">
-                                <label for="input-phone">Phone</label>
-                                <input class="input-popup-double" type="tel" id="input-phone">
-                            </div>
-                            <div class="fieldself-email">
-                                <label for="input-email">Email</label>
-                                <input class="input-popup-double" type="text" id="input-email">
-                            </div>
-                        </div>
-                        <div class="field-inner__wrap">
-                            <label for="input-message">Message</label>
-                            <textarea class="input-message" id="input-message"></textarea>
-                        </div>
-                        <div class="popup__text">
-                            <input type="checkbox" class="custom-checkbox" id="input-click">
-                            <label class="popup-click" for="input-click">By clicking on the button, you consent to the
-                                processing of your personal data</label>
-                        </div>
-                        <button type="submit" class="btn">SUBMIT</button>
-                    </form>
-                <button type="button" class="popup-close"></button>
-                </div>
-                <div class="popup__color"></div>
-            </section>
-    <script src="./js/script.js"></script>
+        </div>
+    </footer> -->
 </body>
 </html>
