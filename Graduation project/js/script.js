@@ -177,7 +177,7 @@ regClose.classList.addEventListener('click', () => {
 // Открытие и закрытие модалки Send message
 
 const popup = document.querySelector('.popup');
-const btn = document.querySelector('.btn__js');
+const btn = document.querySelector('.btn__popup');
 const closePopup = document.querySelector('.popup-close__js');
 
 btn.addEventListener('click', () => {
