@@ -145,20 +145,6 @@
     }
 })();
 
-// Открытие и закрытие модалки Send message
-
-const popup = document.querySelector('.popup');
-const btn = document.querySelector('.btn__js');
-const closePopup = document.querySelector('.popup-close');
-
-btn.addEventListener('click', () => {
-    popup.classList.add('open');
-})
-
-closePopup.addEventListener('click', () => {
-    popup.classList.remove('open');
-})
-
 // Открытие и закрытие модалки Sign in
 
 const signPopup = document.querySelector('.popup__sign-in');
@@ -170,5 +156,35 @@ button.addEventListener('click', () => {
 })
 
 closeSign.addEventListener('click', () => {
-    closeSign.classList.remove('open__sign');
+    signPopup.classList.remove('open__sign');
 })
+
+// Открытие и закрытие модалки Register
+
+const regPopup = document.querySelector('.popup__register');
+const regButton = document.querySelector('.register__js');
+const regClose = document.querySelector('.popup-register__js');
+
+regButton.addEventListener('click', () => {
+    regPopup.classList.add('open__register');
+})
+
+regClose.classList.addEventListener('click', () => {
+    regPopup.remove('open__register');
+})
+
+
+// Открытие и закрытие модалки Send message
+
+const popup = document.querySelector('.popup');
+const btn = document.querySelector('.btn__js');
+const closePopup = document.querySelector('.popup-close__js');
+
+btn.addEventListener('click', () => {
+    popup.classList.add('open');
+})
+
+closePopup.addEventListener('click', () => {
+    popup.classList.remove('open');
+})
+

@@ -335,7 +335,7 @@ progress::-webkit-progress-value {
   color: #FFFFFF;
 }
 
-/* popup регистрации */
+/* popup входа */
 
 .popup__color_sign-in {
   position: fixed;
@@ -393,6 +393,78 @@ progress::-webkit-progress-value {
   color: #E5E5E5;
 }
 
+/* popup регистрации */
+
+.register__color {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  background: rgba(246, 246, 246, 0.99);
+}
+
+.popup__register {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+
+.popup__wrapper-register {
+  display: flex;
+  z-index: 10;
+}
+
+.open__register {
+  display: flex;
+}
+
+.popup-form__register {
+  width: 680px;
+  padding: 50px 40px;
+  border: 2.5px solid #070707;
+  position: relative;
+  z-index: 4;
+  background: #FFFFFF;
+}
+
+.input-email__register {
+  width: 600px;
+  height: 50px;
+}
+
+.input-email__register:hover {
+    border: 2.5px solid #828282;
+}
+  
+.input-email__register:active {
+    border: 2.5px solid #070707;
+}
+
+
+.fieldself-double__register {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.fieldself-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldself-surnmame {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldself-data {
+  display: flex;
+  flex-direction: column;
+}
+
 /* popup кнопка */
 
 .popup__color {
@@ -413,7 +485,7 @@ progress::-webkit-progress-value {
 .popup { 
   display: none;
   position: absolute;
-  top: 410%;
+  top: 350%;
   left: 25%; 
   z-index: 99;
 }
@@ -534,6 +606,10 @@ textarea {
   display: inline-flex;
   align-items: center;
   user-select: none;
+}
+
+.custom-checkbox+label:hover {
+  opacity: 0.5;
 }
 
 .custom-checkbox+label::before {
