@@ -335,6 +335,35 @@ progress::-webkit-progress-value {
   color: #FFFFFF;
 }
 
+/* Стилизация контекстного меню */
+
+/* .button-to-top {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: rgb(90, 255, 247);
+  border: none;
+  cursor: pointer;
+}
+
+.button-to-top_hidden {
+  display: none;
+}*/
+
+.contextmenu {
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+.contextmenu_hidden {
+  display: none;
+}
+
 /* popup входа */
 
 .popup__color_sign-in {
