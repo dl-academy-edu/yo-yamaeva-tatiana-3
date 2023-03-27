@@ -159,6 +159,12 @@ closeSign.addEventListener('click', () => {
     signPopup.classList.remove('open__sign');
 })
 
+window.addEventListener('keydown', function(event) {
+    if (event.code === "Escape" && signPopup.classList.contains('open__sign')) {
+        signPopup.classList.remove('open__sign');
+    }
+})
+
 // Открытие и закрытие модалки Register
 
 const regPopup = document.querySelector('.popup__register');
@@ -173,6 +179,11 @@ regClose.addEventListener('click', () => {
     regPopup.classList.remove('open__register');
 })
 
+window.addEventListener('keydown', function(event) {
+    if (event.code === "Escape" &&  regPopup.classList.contains('open__register')) {
+        regPopup.classList.remove('open__register');
+    }
+})
 
 // Открытие и закрытие модалки Send message
 
@@ -188,56 +199,65 @@ closePopup.addEventListener('click', () => {
     popup.classList.remove('open');
 })
 
-// fixed кнопка
-
-// контекстное меню это на что мы нажимаем правой кнопкой мыши
-
-// получение ссылки на контекстное меню
-const contextMenu = document.querySelector('.contextmenu_js');
-
-// Вешаем слушатель на событие которое у нас связано с контекстным меню.
-window.addEventListener('contextmenu', (e) => {
-    e.preventDefault(); //Ломаем стандартное поведение контекстного меню.
-
-    //Толкаем элеменет от границ экрана в соответствии с позицией курсора.
-    contextMenu.style.top = `${e.clientY}px`;
-    contextMenu.style.left = `${e.clientX}px`;
-
-    contextMenu.classList.remove('contextmenu_hidden');
-
-    window.addEventListener('scroll', scrollHandler);
-    window.addEventListener('click', clickHandler);
-    window.addEventListener('keydown', closeMenu);
+window.addEventListener('keydown', function(event) {
+    if(event.code === "Escape" && popup.classList.contains('open')) {
+        popup.classList.remove('open');
+    }
 })
+
+// // fixed кнопка
+
+// // контекстное меню это на что мы нажимаем правой кнопкой мыши
+
+// // получение ссылки на контекстное меню
+// const contextMenu = document.querySelector('.contextmenu_js');
+
+// // Вешаем слушатель на событие которое у нас связано с контекстным меню.
+// window.addEventListener('contextmenu', (e) => {
+//     e.preventDefault(); //Ломаем стандартное поведение контекстного меню.
+
+//     //Толкаем элеменет от границ экрана в соответствии с позицией курсора.
+//     contextMenu.style.top = `${e.clientY}px`;
+//     contextMenu.style.left = `${e.clientX}px`;
+
+//     contextMenu.classList.remove('contextmenu_hidden');
+
+//     window.addEventListener('scroll', scrollHandler);
+//     window.addEventListener('click', clickHandler);
+//     window.addEventListener('keydown', closeMenu);
+// })
 
 // Функции для передачи событий
 
 // Открытие при скролле
-function scrollHandler(e) {
-    console.log('scrollHandler');
-    closeMenu();
-}
+// function scrollHandler(e) {
+//     console.log('scrollHandler');
+//     closeMenu();
+// }
 
-// Открытие при клике
-function clickHandler(e) {
-    console.log('clickHandler');
-    if(!contextMenu.contains(e.target)) {
-        closeMenu();
-    }
-}
+// // Открытие при клике
+// function clickHandler(e) {
+//     console.log('clickHandler');
+//     if(!contextMenu.contains(e.target)) {
+//         closeMenu();
+//     }
+// }
 
-// Открытие при нажатии кнопки
-function escHandler(e) {
-    console.log('escHandler');
-    if(e.keyCode === 27) {
-        closeMenu();
-    }
-}
+// // Открытие при нажатии кнопки
+// function escHandler(e) {
+//     console.log('escHandler');
+//     if(e.keyCode === 27) {
+//         closeMenu();
+//     }
+// }
 
-// Функция закрытия меню
-function closeMenu() {
-    window.removeEventListener('scroll', scrollHandler);
-    window.removeEventListener('click', clickHandler);
-    window.removeEventListener('keydown', closeMenu);
-    contextMenu.classList.add('contextmenu_hidden'); //Добавляем класс контекстного меню обратно
-}
+// // Функция закрытия меню
+// function closeMenu() {
+//     window.removeEventListener('scroll', scrollHandler);
+//     window.removeEventListener('click', clickHandler);
+//     window.removeEventListener('keydown', closeMenu);
+//     contextMenu.classList.add('contextmenu_hidden'); //Добавляем класс контекстного меню обратно
+// }
+
+
+
