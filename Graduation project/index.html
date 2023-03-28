@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <title>Start Page</title>
+</head>
+<body>
+    <header class="container header">
+        <a class="header-home" href="index.html">Home</a>
+        <ul class="header__list">
+            <li class="header__list-item"><a class="header__title" href="./pages/blog.html">My blog</a></li>
+            <li class="header__list-item"><a class="header__title link-js" href="#">Sign in</a></li>
+            <li class="header__list-item"><a class="header__title register__js" href="#">Register</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="information container">
+        <h1 class="caption">Tatiana Anatolievna</h1>
+        <p class="desc">Future front-end developer 16 years old, Tolyatti</p>
+        </section>
+        <div class="container">
+            <div class="slider">
+                <div class="slider_wrapper">
+                    <div class="slider_inner-wrapper">
+                        <div class="slider_slide"><img src="./image/slide1.jpg" width="1033"></div>
+                        <div class="slider_slide"><img src="./image/slide2.jpg" width="1022"></div>
+                        <div class="slider_slide"><img src="./image/slide3.jpg" width="465"></div>
+                        <div class="slider_slide"><img src="./image/slide4.jpg" width="465"></div>
+                    </div>
+                </div>
+                <div class="slider__bottom-panel">
+                    <button class="slider__button slider__button_back slider__button_back-js"><img src="./icon/arrow__left.svg" alt="arrow-left"></button>
+                    <div class="sliider__pagination slider__pagination_js"></div>
+                    <button class="slider__button slider__button_next slider__button_next-js"><img src="./icon/arrow_right.svg" alt="arrow-right"></button>
+                </div>
+            </div>
+        </div>
+        <section class="animation">
+            <h2 class="title">About me</h2>
+            <div class="animation-icon">
+                <img class="icon__about-me" src="./icon/icon__right.svg" alt="icon-right" width="478">
+                <p class="animation__text">Сферу IT я полюбила, когда ходила на занятия по программированию. Я там делала сайты в тильде. Мне это нравилось. Потом я познакомилась с языком гипертекстовой разметки HTML. Вместе с ним я начала поверхностно знакомиться с css.</p>  
+                <img class="icon-two" src="./icon/icon__left.svg" alt="icon-left" width="478">
+                <p class="animation__text-two">Через некоторое время я начала изучать, какие бывают профессии в IT. Хотела стать веб-дизайнером, но потом поняла, что это не моё. И остановилась на Frontend-разработке.</p>         
+                <img class="icon-three" src="./icon/icon__right.svg" alt="icon-right" width="478">
+                <p class="animation__text-three">Свободное от учёбы время я люблю проводить с друзьями, заниматься спортом и играть в настольные игры. Езда за город даёт мне перезагрузиться и с хорошим настроем идти дальше к своим целям.</p>
+            </div>
+        </section>
+        <div class="container">
+            <h2 class="title">Skills</h2>
+            <p class="subtitle">I work in such programs as</p>
+            <ul class="skills__image">
+                <li class="skills-item">
+                    <img class="image" src="./icon/html.svg" alt="html" width="79" height="90">
+                    <p class="subtitle__skills">HTML 5</p>
+                    <div class="skills__progress">
+                        <p class="percent">60%</p>
+                        <progress value="60" max="100"></progress>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <img class="image" src="./icon/css.svg" alt="css/scss" width="79" height="90">
+                    <p class="subtitle__css">CSS/SCSS</p>
+                    <div class="skills__progress">
+                        <p class="percent">40%</p>
+                        <progress value="40" max="100"></progress>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <img class="image" src="./icon/js.svg" alt="java script" width="79" height="90">
+                    <p class="subtitle__js">JavaScript</p>
+                    <div class="skills__progress">
+                        <p class="percent">2%</p>
+                        <progress value="2" max="100"></progress>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <img class="image" src="./icon/github.svg" alt="github" width="79" height="90">
+                    <p class="subtitle__git">Git/GitHub</p>
+                    <div class="skills__progress">
+                        <p class="percent">10%</p>
+                        <progress value="10" max="100"></progress>
+                    </div>
+                </li>
+                <li class="skills-item">
+                    <img class="image" src="./icon/figma.svg" alt="figma" width="79" height="90">
+                    <p class="subtitle__skills">Figma</p>
+                    <div class="skills__progress">
+                        <p class="percent">70%</p>
+                        <progress value="70" max="100"></progress>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <section class="portfolio">
+            <h2 class="title">Portfolio</h2>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="./image/main.jpg" width="1000"></div>
+                  <div class="swiper-slide"><img src="./image/catalog.jpg" width="1000"></div>
+                  <div class="swiper-slide"><img src="./image/toys.jpg" width="1000"></div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper__inner-wrap">
+                <p class="swiper__text"><span class="decoration__text">Learning site for DL Academy courses</span></p>
+                <p class="swiper__text-two">A simple multi-page static site. The design layout was in Figma. HTML and CSS were used. The site is responsive and cross-browser, but without adding interactivity via JavaScript.</p>
+            </div>
+        </section>
+    <footer>
+        <div class="container">
+            <h2 class="title__contacts">Contacts</h2>
+            <p class="subtitle__contacts">Want to know more or just chat? You are welcome!</p>
+            <div class="button-wrapper">
+                <button type="button" class="btn-contacts btn__js">Send message</button>
+            </div>
+        <section>
+            <ul class="socials-footer">
+                <button type="button" class="btn-footer"><a class="btn-footer-link" href="#">Instagram</a></button>
+                <button type="button" class="btn-footer"><a class="btn-footer-link" href="https://vk.com/tanya_yamaeva">Vk</a></button>
+                <button type="button" class="btn-footer"><a class="btn-footer-link" href="http://t.me/tane4ka_2006">Telegram</a></button>
+            </ul>
+            <ul class="socials-footer-bottom">
+            <button type="button" class="btn-footer"><a class="btn-footer-link" href="#">Mail</a></button>
+            <button type="button" class="btn-footer"><a class="btn-footer-link" href="https://github.com/taaanyya">GitHub</a></button>
+            <button type="button" class="btn-footer"><a class="btn-footer-link" href="#">Phone</a></button>
+            </ul>
+        </section>
+        <div class="footer__text">
+            <p class="footer__information">Design by <a class="decoration__link" href="https://dlacademy.ru/?ysclid=lffgkhg2a211177926">DL Academy</a></p>
+            <p class="footer__information">Program code from Tatiana</p>
+        </div>
+        </div>
+    </footer>
+        <div class="container">
+            <section class="popup__sign-in">
+                <div class="popup__wrapper-sign">
+                    <h2 class="hidden">Popup</h2>
+                    <form action="#" class="popup-form__sign-in">
+                        <div class="fieldself-email">
+                            <label class="headline__text" for="input-email">Email *</label>
+                            <input class="input-popup-double" type="text" id="input-email">
+                        </div>
+                        <div class="fieldself-password">
+                            <label class="headline__text" for="input-password">Password *</label>
+                            <input class="input-popup-double" type="text" id="input-password">
+                        </div>
+                        <button type="submit" class="btn btn-popup__sign-in">Log in</button>
+                    </form>
+                    <button type="button" class="popup-close"></button>
+                </div>
+                <div class="popup__color_sign-in"></div>
+            </section>
+        </div>
+        <div class="container">
+            <section class="popup__register">
+                <div class="popup__wrapper-register">
+                    <h2 class="hidden">Popup</h2>
+                    <form action="#" class="popup-form__register">
+                        <div class="label__wrapper">
+                            <label class="headline__text" for="input-email">Email *</label>
+                            <input class="input-email__register" type="text" id="input-email">
+                        </div>
+                        <div class="fieldself-double__register">
+                            <div class="fieldself-name">
+                                <label class="headline__text" for="input-name">Name *</label>
+                                <input class="input-popup-double" type="text" id="input-name">
+                            </div>
+                            <div class="fieldself-surnmame">
+                                <label class="headline__text" for="input-surname">Surname*</label>
+                                <input class="input-popup-double" type="text" id="input-surname">
+                            </div>
+                        </div>
+                        <div class="fieldself-double__register">
+                            <div class="fieldself-password">
+                                <label class="headline__text" for="input-password">Password *</label>
+                                <input class="input-popup-double" type="text" id="input-password">
+                            </div>
+                            <div class="fieldself-password">
+                                <label class="headline__text" for="input-password">Repeat password *</label>
+                                <input class="input-popup-double" type="text" id="input-password">
+                            </div>
+                        </div>
+                        <div class="fieldself-double__register">
+                            <div class="fieldself-data">
+                                <label class="headline__text" for="input-location">Location *</label>
+                                <input class="input-popup-double" type="text" id="input-location">
+                            </div>
+                            <div class="fieldself-data">
+                                <label class="headline__text" for="input-age">Age *</label>
+                                <input class="input-popup-double" type="text" id="input-age">
+                            </div>
+                        </div>
+                        <div class="popup__text">
+                            <input type="checkbox" class="custom-checkbox" id="input-click">
+                            <label class="popup-click" for="input-click">Clicking on the button, you consent to the processing of your personal data.</label>
+                        </div>
+                        <button type="submit" class="btn btn__popup">Sign up</button>
+                    </form>
+                    <button type="button" class="popup-close popup-register__js"></button>
+                <div class="register__color"></div>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section class="popup">
+                <div class="popup-wrapper">
+                    <h2 class="hidden">Popup</h2>
+                    <form action="#" class="popup-form">
+                        <div class="fieldself-double">
+                            <div>
+                                <label class="headline__text" for="input-name">What is your name? *</label>
+                                <input class="input-popup-double" type="text" id="input-name">
+                            </div>
+                            <div>
+                                <label class="headline__text" for="input-message">Message subject *</label>
+                                <input class="input-popup-double" type="text" id="input-message">
+                            </div>
+                        </div>
+                        <div class="fieldself-double-two">
+                            <div class="fieldself-email">
+                                <label class="headline__text" for="input-email">Your Email *</label>
+                                <input class="input-popup-double" type="text" id="input-email">
+                            </div>
+                            <div class="fieldself-phone">
+                                <label class="headline__text" for="input-phone">Your mobile phone *</label>
+                                <input class="input-popup-double" type="tel" id="input-phone">
+                            </div>
+                        </div>
+                        <div class="field-inner__wrap">
+                            <label class="headline__text" for="input-message">What do you want to discuss with me?</label>
+                            <textarea class="input-message" id="input-message"></textarea>
+                        </div>
+                        <div class="popup__text">
+                            <input type="checkbox" class="custom-checkbox" id="input-click">
+                            <label class="popup-click" for="input-click">Clicking on the button, you consent to the processing of your personal data.</label>
+                        </div>
+                        <button type="submit" class="btn btn__popup">Send</button>
+                    </form>
+                    <button type="button" class="popup-close popup-close__js"></button>
+                </div>
+                <div class="popup__color"></div>
+            </section>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
